@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the user
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt user to enter the first number
+        System.out.print("Enter the first number: ");
+        double num1 = scanner.nextDouble();
+        
+        // Prompt user to enter the second number
+        System.out.print("Enter the second number: ");
+        double num2 = scanner.nextDouble();
+        
+        // Compare the two numbers using comparison operators
+        boolean greaterThan = num1 > num2;
+        boolean lessThan = num1 < num2;
+        boolean equalTo = num1 == num2;
+        boolean notEqualTo = num1 != num2;
+        
+        // Display the comparison results
+        System.out.println(num1 + " is greater than " + num2 + ": " + greaterThan);
+        System.out.println(num1 + " is less than " + num2 + ": " + lessThan);
+        System.out.println(num1 + " is equal to " + num2 + ": " + equalTo);
+        System.out.println(num1 + " is not equal to " + num2 + ": " + notEqualTo);
+        
+        // Close the Scanner
+        scanner.close();
+    }
+}
