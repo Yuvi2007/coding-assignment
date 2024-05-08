@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner to read input from user
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt user to enter a number
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        
+        // Determine if the number is even or odd
+        boolean isEven = (number % 2 == 0);
+        
+        // Display the result
+        if (isEven) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
+        }
+        
+        // Close the Scanner 
+        scanner.close();
+    }
+}
