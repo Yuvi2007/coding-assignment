@@ -1,0 +1,35 @@
+public class Main {
+    public static void main(String[] args) {
+        // Using a while loop
+        int num1 = 1;
+        int sum1 = 0;
+
+        while (num1 <= 100) {
+            sum1 += num1;
+            num1++;
+        }
+
+        System.out.println("Sum of natural numbers from 1 to 100 using while loop: " + sum1);
+
+        // Using a do-while loop
+        int num2 = 1;
+        int sum2 = 0;
+
+        do {
+            sum2 += num2;
+            num2++;
+        } while (num2 <= 100);
+
+        System.out.println("Sum of natural numbers from 1 to 100 using do-while loop: " + sum2);
+
+        // Using a for loop
+        int sum3 = 0;
+
+        for (int num3 = 1; num3 <= 100; num3++) {
+            sum3 += num3;
+        }
+
+        System.out.println("Sum of natural numbers from 1 to 100 using for loop: " + sum3);
+    }
+}
+
