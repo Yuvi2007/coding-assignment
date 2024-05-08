@@ -1,0 +1,83 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner to read input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt user to choose an option
+        System.out.println("Choose an option:");
+        System.out.println("1. Calculator");
+        System.out.println("2. Find Grades");
+        System.out.print("Enter your choice (1 or 2): ");
+        int choice = scanner.nextInt();
+
+        switch (choice) {
+            case 1:
+                // Calculator
+                System.out.println("Calculator selected.");
+                System.out.print("Enter first number: ");
+                double num1 = scanner.nextDouble();
+                System.out.print("Enter second number: ");
+                double num2 = scanner.nextDouble();
+
+                // Perform operations
+                System.out.println("Select operation:");
+                System.out.println("1. Addition");
+                System.out.println("2. Subtraction");
+                System.out.println("3. Multiplication");
+                System.out.println("4. Division");
+                System.out.print("Enter operation (1-4): ");
+                int operation = scanner.nextInt();
+
+                switch (operation) {
+                    case 1:
+                        System.out.println("Result: " + (num1 + num2));
+                        break;
+                    case 2:
+                        System.out.println("Result: " + (num1 - num2));
+                        break;
+                    case 3:
+                        System.out.println("Result: " + (num1 * num2));
+                        break;
+                    case 4:
+                        if (num2 != 0) {
+                            System.out.println("Result: " + (num1 / num2));
+                        } else {
+                            System.out.println("Error! Division by zero.");
+                        }
+                        break;
+                    default:
+                        System.out.println("Invalid operation!");
+                }
+                break;
+            case 2:
+                // Find Grades
+                System.out.println("Find Grades selected.");
+                System.out.print("Enter marks: ");
+                int marks = scanner.nextInt();
+
+                // Determine grade
+                char grade;
+                if (marks >= 90) {
+                    grade = 'A';
+                } else if (marks >= 80) {
+                    grade = 'B';
+                } else if (marks >= 70) {
+                    grade = 'C';
+                } else if (marks >= 60) {
+                    grade = 'D';
+                } else {
+                    grade = 'F';
+                }
+
+                System.out.println("Grade: " + grade);
+                break;
+            default:
+                System.out.println("Invalid choice!");
+        }
+
+        // Close the Scanner 
+        scanner.close();
+    }
+}
