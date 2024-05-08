@@ -1,7 +1,1 @@
-public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
-
-  
-}
+coding assignment 1-14
