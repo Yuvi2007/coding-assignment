@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Even numbers using for loop:");
+        for (int i = 2; i <= 20; i += 2) {
+            System.out.print(i + " ");
+        }
+        
+        System.out.println("\nOdd numbers using while loop:");
+        int num1 = 1;
+        while (num1 <= 20) {
+            System.out.print(num1 + " ");
+            num1 += 2;
+        }
+        
+        System.out.println("\nEven numbers using do-while loop:");
+        int num2 = 2;
+        do {
+            System.out.print(num2 + " ");
+            num2 += 2;
+        } while (num2 <= 20);
+    }
+}
