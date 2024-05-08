@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        // Initialize variable x with a value of 5
+        int x = 5;
+
+        // Increment (add) x by 10 using compound assignment operator +=
+        x += 10;
+
+        // Display the result
+        System.out.println("The value of x after incrementing by 10 is: " + x);
+    }
+}
