@@ -5,7 +5,7 @@ public class Main {
         // Create a Scanner to read input from user
         Scanner scanner = new Scanner(System.in);
 
-        // Prompt the user to enter a number
+        // Prompt user to enter a number
         System.out.print("Enter a number: ");
 
         // Read the input number from user
